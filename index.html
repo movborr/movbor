@@ -29,13 +29,19 @@
     }
     h1{
       font-size:clamp(28px,4vw,44px);
-      margin-bottom:12px; /* rapproché du contenu */
+      margin-bottom:10px; /* rapproché du contenu */
     }
     img{
-      max-width:80%; /* réduit légèrement la taille */
+      width:80%; /* mobile par défaut */
+      max-width:560px; /* réduit sur desktop */
       height:auto;
       border-radius:8px;
       margin-bottom:12px;
+    }
+    @media(min-width:860px){
+      img{
+        width:56%; /* 30% plus petit sur desktop */
+      }
     }
     p{
       font-size:16px;
